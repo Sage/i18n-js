@@ -1,14 +1,3 @@
-// Polyfill for indexOf for IE7/8
-if (!Array.prototype.indexOf) {
-  Array.prototype.indexOf = function(obj, start) {
-    for (var i = (start || 0), j = this.length; i < j; i++) {
-      if (this[i] === obj) { return i; }
-    }
-    return -1;
-  }
-}
-// Note: Removed the polyfill that was added from https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/indexOf as it causes IE8 to crash on page load always.
-
 // Instantiate the object
 var I18n = I18n || {};
 
