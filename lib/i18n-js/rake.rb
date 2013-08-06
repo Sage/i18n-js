@@ -9,8 +9,7 @@ namespace "i18n:js" do
     SimplesIdeias::I18n.export!
   end
 
-  desc "Update the JavaScript library"
-  task :update => :environment do
+  task :upgrade_i18njs => :environment do
     SimplesIdeias::I18n.update!
   end
 end
