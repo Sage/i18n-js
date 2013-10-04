@@ -10,8 +10,8 @@ I18n.fallbacks = false;
 // Set default separator
 I18n.defaultSeparator = ".";
 
-// Set current locale to null
-I18n.locale = null;
+// Set current locale to null if not already set
+I18n.locale = I18n.locale || null;
 
 // Set the placeholder format. Accepts `{{placeholder}}` and `%{placeholder}`.
 I18n.PLACEHOLDER = /(?:\{\{|%\{)(.*?)(?:\}\}?)/gm;
